@@ -1,13 +1,13 @@
 body {
   font-size: 16px;
   color: rgb(15, 6, 6);
-  background-color: #3088fc;
+  background-color: #b575ff34;
   font-family: 'Oxygen', sans-serif;
 }
 
 /** HEADER **/
 #header-nav {
-  background-color: #02f7ff;
+  background-color: #6ffaff80;
   border-radius: 0;
   border: 0;
 }
@@ -83,7 +83,7 @@ body {
   padding-top: 35px;
   padding-bottom: 30px;
   color:#fff;
-  background-color: rgb(56, 77, 92);
+  background-color: #b575ff34;
   border-top: 0;
 }
 .panel-footer div.row {
@@ -182,6 +182,7 @@ body {
 /* SOUND BATH PAGE */
 #main-content div {
   font-size: 50px;
+  text-align: center;
 }
 
 #sbp img{
