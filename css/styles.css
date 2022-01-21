@@ -25,21 +25,27 @@ body {
   height: 150px;
   margin: 10px 15px 10px 0;
 }
-
-.navbar-brand {
-  padding-top: 25px;
+.navbar-header {
+  position: relative;
+  width: 100%;
+  float: left;
 }
+/* .navbar-brand {
+  padding-top: 25px;
+} */
 .navbar-brand div { /* Restaurant name */
   /* <!-font-family: 'Lora', serif; */
   color: #a200ff;
   font-size: 3vh;
   text-transform: uppercase;
   font-weight: bold;
+  position: relative;
   /* text-shadow: 1px 1px 1px #222; */
   margin-top: auto;
   margin-bottom: auto;
   line-height: .75;
   font-family: 'Papyrus', sans-serif;
+  top: 50%;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
@@ -97,22 +103,23 @@ body {
 .panel-footer div.row {
   margin-bottom: 35px;
 }
-#hours, #address {
-  line-height: 2;
+.fa, .fab {
+  font-size: 35px;
+  color:rgb(0, 234, 255);
+  margin: 0px;
+  size: 35px 35px;
 }
-#hours > span, #address > span {
-  font-size: 1.3em;
+.fa span, .fab span{
+  font-size: 20px;
+  color:rgb(0, 0, 0);
+  font-weight: normal;
+  position: relative;
+  left: 30px;
+  top: 50%;
 }
-#address p {
-  color: #557c3e;
-  font-size: .8em;
-  line-height: 1.8;
-}
-#testimonials {
-  font-style: italic;
-}
-#testimonials p:nth-child(2) {
-  margin-top: 25px;
+
+#instagram, #tiktok{
+  padding: 4.37px;
 }
 /* END FOOTER */
 
