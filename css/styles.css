@@ -13,7 +13,7 @@ body {
   background-color: #6ffaff80;
   border-radius: 0;
   border: 0;
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: 'Papyrus', sans-serif;
   font-weight: bold;
 }
 
@@ -37,7 +37,7 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   line-height: .75;
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: 'Papyrus', sans-serif;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
@@ -187,18 +187,18 @@ body {
 
 /* SOUND BATH PAGE */
 #main-content h1 {
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: 'Papyrus', sans-serif;
   font-size: 50px;
   text-align: center;
 }
 
 #main-content h2 {
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: 'Papyrus', sans-serif;
   text-align: center;
 }
 
 #main-content h3 {
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: 'Papyrus', sans-serif;
   text-align: center;
 }
 
