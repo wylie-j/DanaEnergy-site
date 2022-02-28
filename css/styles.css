@@ -59,9 +59,14 @@ body {
 .navbar-brand p span { /* Star-K */
   vertical-align: middle;
 }
+.navbar-brand{
+  float: left;
+}
 
 #nav-list {
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  float: right;
+  position: relative;
 }
 #nav-list a {
   color: #a200ff;
@@ -100,26 +105,55 @@ body {
   background-color: #b575ff34;
   border-top: 0;
 }
+.panel-footer .container{
+
+}
 .panel-footer div.row {
   margin-bottom: 35px;
 }
 .fa, .fab {
   font-size: 35px;
-  color:rgb(0, 234, 255);
+  color:#b575ff34;
+  /* color: #6ffaff; */
   margin: 0px;
   size: 35px 35px;
 }
 .fa span, .fab span{
-  font-size: 20px;
-  color:rgb(0, 0, 0);
+  font-size: 15px;
+  color: black;
   font-weight: normal;
   position: relative;
-  left: 30px;
+  left: 5px;
   top: 50%;
 }
 
 #instagram, #tiktok{
-  padding: 4.37px;
+  padding-right: 4.37px;
+}
+
+#contact {
+  width: 100%;
+}
+
+#contact a{
+  box-sizing: border-box;
+  float: left;
+  background-color: #6ffaff80;
+  width: 20%;
+  border-style: solid;
+  border-width: 1px;
+  margin: 1px;
+}
+
+#contact a i{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+#contact a div{
+  text-align: center;
 }
 /* END FOOTER */
 
@@ -210,13 +244,6 @@ body {
   font-family: 'Papyrus', sans-serif;
   text-align: center;
 }
-
-/* #sbp img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} */
 
 div p {
   text-align: center;
@@ -328,53 +355,6 @@ img {
 
 /* END SOUND BATH PAGE*/
 
-/* SINGLE CATEGORY PAGE */
-.menu-item-tile {
-  margin-bottom: 25px;
-}
-.menu-item-tile hr {
-  width: 80%;
-}
-.menu-item-tile .menu-item-price {
-  font-size: 1.1em;
-  text-align: right;
-  margin-top: -15px;
-  margin-right: -15px;
-}
-.menu-item-tile .menu-item-price span {
-  font-size: .6em;
-}
-.menu-item-photo {
-  position: relative;
-  border: 2px solid #3F0C1F; 
-  overflow: hidden;
-  padding: 0;
-  margin-right: -15px;
-  margin-left: auto;
-  margin-bottom: 20px;
-  max-width: 250px;
-}
-.menu-item-photo div {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 80px;
-  background-color: #557c3e;
-  text-align: center;
-}
-.menu-item-description {
-  padding-right: 30px;
-}
-h3.menu-item-title {
-  margin: 0 0 10px;
-}
-.menu-item-details {
-  font-size: .9em;
-  font-style: italic;
-}
-/* END SINGLE CATEGORY PAGE */
-
-
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
@@ -410,6 +390,12 @@ h3.menu-item-title {
     height: 432px;
   }
   /* End Home Page */
+  .fab, .fa {
+    /* TODO: Move icons to center. Do this for XS devices as well */
+  }
+  i span {
+    display: none;
+  }
 }
 
 /********** Extra small devices only **********/

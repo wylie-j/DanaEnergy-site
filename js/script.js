@@ -24,11 +24,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 var dc = {};
 
 var headerHtml = "snippets/headerSnippet.html";
-var categoryHtml = "snippets/category-snippet.html";
-var menuItemsUrl =
-  "https://davids-restaurant.herokuapp.com/menu_items.json?category=";
-var menuItemsTitleHtml = "snippets/menu-items-title.html";
-var menuItemHtml = "snippets/menu-item.html";
+var footerHtml = "snippets/footerSnippet.html";
 
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
@@ -70,7 +66,7 @@ var switchMenuToActive = function () {
 // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
 
-// On first load, show home view
+// On first load, show header
 showLoading("header");
 $ajaxUtils.sendGetRequest(
   headerHtml,
@@ -79,8 +75,17 @@ $ajaxUtils.sendGetRequest(
       .innerHTML = responseText;
   },
   false);
-});
 
+  showLoading("footer");
+  $ajaxUtils.sendGetRequest(
+  footerHtml,
+  function (footerHtml) {
+      document.querySelector("footer")
+      .innerHTML = footerHtml;
+  },
+  false);
+
+});
 
 global.$dc = dc;
 
