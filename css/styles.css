@@ -90,7 +90,7 @@ nav img {
   text-align: right;
 }
 .navbar-toggler-icon{
-  background-image: url(/images/menuIcon.svg);
+  background-image: url(../images/menuIcon.svg);
 }
 .navbar-toggler{
   border-style: solid;
