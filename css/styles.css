@@ -12,12 +12,13 @@ body {
 }
 
 /** HEADER **/
-#header-nav {
+.navbar {
   background-color: #6ffaff80;
   border-radius: 0;
   border: 0;
   font-family: 'Papyrus', sans-serif;
   font-weight: bold;
+  margin-bottom: 25px;
 }
 
 /* #logo-img {
@@ -34,13 +35,24 @@ body {
 /* .navbar-brand {
   padding-top: 25px;
 } */
-.navbar-brand div { /* Restaurant name */
+
+nav img {
+  display: block;
+  height: 25%;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-brand { /* Website */
   /* <!-font-family: 'Lora', serif; */
   color: #a200ff;
   font-size: 3vh;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
   /* text-shadow: 1px 1px 1px #222; */
   margin-top: auto;
   margin-bottom: auto;
@@ -57,44 +69,47 @@ body {
   font-size: .7em;
   margin-top: 15px;
 }
-.navbar-brand p span { /* Star-K */
-  vertical-align: middle;
-}
-.navbar-brand{
-  float: left;
-}
 
-#nav-list {
+#navbar-nav {
   /* margin-top: 10px; */
+  margin-left: auto;
   float: right;
-  position: relative;
 }
-#nav-list a {
+.nav-link *, .nav-link{
   color: #a200ff;
   text-align: center;
+  font-weight: bold;
 }
-#nav-list a:hover {
+#navbar-nav a:hover {
   background: #b575ff34;
 }
-#nav-list a span {
+#navbar-nav a span {
   font-size: 1.8em;
 }
-
-#phone {
-  margin-top: 5px;
-}
-#phone a { /* Phone number */
+.nav-item{
   text-align: right;
-  padding-bottom: 0;
+}
+.navbar-toggler-icon{
+  background-image: url(/images/menuIcon.svg);
+}
+.navbar-toggler{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #717171;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+/* .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #000000;
 }
+
+.icon-bar{
+  clear: left;
+}
+
 .navbar-header button.navbar-toggle {
   clear: both;
   margin-top: -30px;
-}
+} */
 /* END HEADER */
 
 /* FOOTER */
@@ -174,6 +189,14 @@ body {
   width: 10%; */
 }
 
+a img{
+position: relative;
+bottom: 2px;
+width: 35px;
+height: 35px;
+border-radius: 25%;
+}
+
 #contact div a div{
   text-align: center;
 } 
@@ -209,7 +232,7 @@ div p {
   /* IMAGE SLIDESHOW  */
 * {box-sizing: border-box;}
 .mySlides {display: none;}
-img {vertical-align: middle  }
+/* img {vertical-align: middle  } */
 
 /* Slideshow container */
 .slideshow-container {
@@ -218,7 +241,8 @@ img {vertical-align: middle  }
   margin: auto;
 }
 
-img {
+.myslides img {
+  vertical-align: middle;
   width:  500px;
   height: 500px;
   object-fit: cover;
